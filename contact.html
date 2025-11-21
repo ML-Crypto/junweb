@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="村齊超音波 - 聯絡我們，隨時為您服務">
+    <title>聯絡我們 - 村齊超音波</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="simple-loader">
+            <!-- 主要加載器 -->
+            <div class="loader-content">
+                <div class="company-logo">
+                    <span class="logo-text">村齊超音波</span>
+                </div>
+                <div class="loading-indicator">
+                    <div class="progress-line"></div>
+                    <div class="loading-text">正在加載...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/company_logo.jpg" alt="村齊超音波" class="logo-image">
+                        </a>
+                    </div>
+                    
+                    <div class="nav-center">
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html" class="nav-link" data-translate="nav.home">首頁</a></li>
+                            <li><a href="about.html" class="nav-link" data-translate="nav.about">關於</a></li>
+                            <li><a href="portfolio.html" class="nav-link">工程實績</a></li>
+                            <li><a href="products.html" class="nav-link" data-translate="nav.products">產品應用</a></li>
+                            <li><a href="contact.html" class="nav-link active" data-translate="nav.contact">聯絡</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <div class="language-selector">
+                            <button class="lang-toggle" id="langToggle">
+                                <i class="fas fa-globe"></i>
+                                <span class="current-lang">繁中</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <a href="#" class="lang-option active" data-lang="zh-TW">
+                                    <span class="flag">🇹🇼</span>
+                                    <span class="lang-name">繁體中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="zh-CN">
+                                    <span class="flag">🇨🇳</span>
+                                    <span class="lang-name">简体中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="en">
+                                    <span class="flag">🇺🇸</span>
+                                    <span class="lang-name">English</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="vi">
+                                    <span class="flag">🇻🇳</span>
+                                    <span class="lang-name">Tiếng Việt</span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <nav class="breadcrumb">
+                    <a href="index.html">首頁</a>
+                    <span>/</span>
+                    <span data-translate="nav.contact">聯絡我們</span>
+                </nav>
+                <h1 class="page-title" data-translate="contact.title">隨時為您服務</h1>
+                <p class="page-subtitle">歡迎聯繫我們，獲得專業的超音波清洗解決方案</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h2 class="hero-title">讓我們為您打造<br><span class="gradient-text">最適合的清洗解決方案</span></h2>
+                <p class="hero-description">37年專業經驗，超過1000個成功案例，我們深知每個客戶的需求都是獨一無二的</p>
+                
+                <div class="contact-stats">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <span class="stat-number" data-count="24">0</span>
+                        <span class="stat-label">小時內回覆</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="stat-number" data-count="37">0</span>
+                        <span class="stat-label">年專業經驗</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                        <span class="stat-number" data-count="1000">0</span>
+                        <span class="stat-label">成功案例</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section-new">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label">聯絡資訊</span>
+                <h2 class="section-title">多種聯絡方式 · 隨時為您服務</h2>
+                <p>透過以下方式聯繫我們，我們的專業團隊將盡快為您提供協助</p>
+            </div>
+            
+            <div class="contact-methods-grid">
+                <!-- 主要聯絡方式 -->
+                <div class="contact-method-card primary" data-aos="fade-up" data-aos-delay="100">
+                    <div class="method-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>電話諮詢</h3>
+                        <p class="method-description">專業客服團隊為您提供即時諮詢服務</p>
+                        <div class="contact-detail">
+                            <span class="detail-label">服務電話</span>
+                            <a href="tel:+886-4-22655333" class="detail-value phone-link">886-4-22655333</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">傳真</span>
+                            <span class="detail-value">886-4-36011186</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">服務時間</span>
+                            <span class="detail-value">週一至週五 8:00-17:00</span>
+                        </div>
+                        <a href="tel:+886-4-22655333" class="contact-action">
+                            <i class="fas fa-phone"></i>
+                            <span>立即撥打</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 電子郵件 -->
+                <div class="contact-method-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="method-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>電子郵件</h3>
+                        <p class="method-description">詳細需求說明，我們將在24小時內回覆</p>
+                        <div class="contact-detail">
+                            <span class="detail-label">客服信箱</span>
+                            <a href="mailto:tc.dj1988@gmail.com?subject=超音波清洗設備諮詢&body=您好，我想了解貴公司的超音波清洗設備，請與我聯繫。%0D%0A%0D%0A公司名稱：%0D%0A聯絡人：%0D%0A聯絡電話：%0D%0A需求說明：%0D%0A" class="detail-value email-link">tc.dj1988@gmail.com</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">服務時間</span>
+                            <span class="detail-value">週一至週五 8:00-17:00</span>
+                        </div>
+                        <a href="mailto:tc.dj1988@gmail.com?subject=超音波清洗設備諮詢&body=您好，我想了解貴公司的超音波清洗設備，請與我聯繫。%0D%0A%0D%0A公司名稱：%0D%0A聯絡人：%0D%0A聯絡電話：%0D%0A需求說明：%0D%0A" class="contact-action">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>發送郵件</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- 辦公地址 -->
+                <div class="contact-method-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>公司地址</h3>
+                        <p class="method-description">歡迎預約參訪，實地了解我們的設備與技術</p>
+                        <div class="contact-detail">
+                            <span class="detail-label">公司地址</span>
+                            <span class="detail-value">402臺中市南區德富路426巷1號</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">服務時間</span>
+                            <span class="detail-value">週一至週五 8:00-17:00</span>
+                        </div>
+                        <a href="https://maps.app.goo.gl/9f85GfpZcC95fUuv8" target="_blank" class="contact-action">
+                            <i class="fas fa-map"></i>
+                            <span>查看地圖</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- LINE 即時通訊 -->
+                <div class="contact-method-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="method-icon">
+                        <i class="fab fa-line"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>LINE 官方帳號</h3>
+                        <p class="method-description">加入LINE好友，獲得即時客服與最新產品資訊</p>
+                        <div class="contact-detail">
+                            <span class="detail-label">LINE ID</span>
+                            <span class="detail-value">@706ygupp</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">服務時間</span>
+                            <span class="detail-value">週一至週五 8:00-17:00</span>
+                        </div>
+                        <a href="https://line.me/R/ti/p/@706ygupp" target="_blank" class="contact-action">
+                            <i class="fab fa-line"></i>
+                            <span>加入好友</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WeChat 微信 -->
+                <div class="contact-method-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="method-icon">
+                        <i class="fab fa-weixin"></i>
+                    </div>
+                    <div class="method-content">
+                        <h3>微信 WeChat</h3>
+                        <p class="method-description">掃描二維碼添加業務工程師，專業技術諮詢</p>
+                        <div class="contact-detail">
+                            <span class="detail-label">業務工程師</span>
+                            <span class="detail-value">winJUN1998</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="detail-label">服務時間</span>
+                            <span class="detail-value">週一至週五 8:00-17:00</span>
+                        </div>
+                        <div class="wechat-qr">
+                            <img src="images/wechat.jpg" alt="微信二維碼" class="qr-code">
+                            <span class="qr-label">掃描二維碼添加好友</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- 服務承諾 -->
+            <div class="service-promise" data-aos="fade-up" data-aos-delay="600">
+                <div class="promise-content">
+                    <h3>我們的服務承諾</h3>
+                    <div class="promise-items">
+                        <div class="promise-item">
+                            <i class="fas fa-clock"></i>
+                            <span>24小時內回覆</span>
+                        </div>
+                        <div class="promise-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>專業技術諮詢</span>
+                        </div>
+                        <div class="promise-item">
+                            <i class="fas fa-tools"></i>
+                            <span>免費樣品測試</span>
+                        </div>
+                        <div class="promise-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>客製化解決方案</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="footer-bg">
+            <div class="footer-gradient"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/company_logo.jpg" alt="村齊超音波" class="footer-logo-image">
+                    </div>
+                    <div class="company-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span data-translate="footer.established">成立於 1988 年</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-award"></i>
+                            <span data-translate="footer.certification">ISO 9001 認證</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <span data-translate="footer.team">50+ 專業團隊</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-translate="footer.links">快速連結</h4>
+                        <ul>
+                            <li><a href="about.html" data-translate="nav.about">關於我們</a></li>
+                            <li><a href="products.html" data-translate="nav.products">產品中心</a></li>
+                            <li><a href="portfolio.html">工程實績</a></li>
+                            <li><a href="contact.html" data-translate="nav.contact">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-translate="footer.products">產品系列</h4>
+                        <ul>
+                            <li><a href="products.html" data-translate="footer.products.smart">智能清洗機</a></li>
+                            <li><a href="products.html" data-translate="footer.products.precision">精密清洗系統</a></li>
+                            <li><a href="products.html" data-translate="footer.products.auto">自動化清洗線</a></li>
+                            <li><a href="products.html" data-translate="footer.products.accessories">清洗配件與耗材</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 data-translate="footer.support">服務支援</h4>
+                        <ul>
+                            <li><a href="contact.html" data-translate="footer.support.docs">技術文件</a></li>
+                            <li><a href="contact.html" data-translate="footer.support.repair">維修服務</a></li>
+                            <li><a href="contact.html" data-translate="footer.support.training">教育訓練</a></li>
+                            <li><a href="contact.html" data-translate="footer.support.warranty">保固條款</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 <span data-translate="brand.name">村齊超音波</span> <span data-translate="footer.copyright">版權所有</span></p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html" data-translate="footer.privacy">隱私權政策</a>
+                    <span>|</span>
+                    <a href="terms-of-service.html" data-translate="footer.terms">使用條款</a>
+                    <span>|</span>
+                    <a href="cookie-policy.html" data-translate="footer.cookies">Cookie 設定</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
