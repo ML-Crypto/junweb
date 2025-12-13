@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="村齊超音波 - 關於我們，37年專業客製化超音波清洗設備研發與製造">
+    <title>關於我們 - 村齊超音波</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome 備用方案 -->
+    <style>
+        /* 如果 CDN 失敗，使用系統字體作為圖示備用 */
+        .fas, .fab, .far {
+            font-family: 'Font Awesome 6 Free', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        /* 圖示備用樣式 */
+        .fa-rocket:before { content: '🚀'; }
+        .fa-certificate:before { content: '🏆'; }
+        .fa-shield-check:before { content: '✅'; }
+        .fa-star:before { content: '⭐'; }
+        .fa-heart:before { content: '❤️'; }
+        .fa-lightbulb:before { content: '💡'; }
+        .fa-users:before { content: '👥'; }
+        .fa-leaf:before { content: '🌿'; }
+        .fa-cogs:before { content: '⚙️'; }
+        .fa-handshake:before { content: '🤝'; }
+        .fa-phone:before { content: '📞'; }
+        .fa-fax:before { content: '📠'; }
+        .fa-map-marker-alt:before { content: '📍'; }
+
+        /* 防止載入時導航閃爍 */
+        .header { opacity: 0; }
+        @media (max-width: 768px) {
+            .nav-center { display: none !important; }
+            .nav-center.active { display: block !important; }
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="simple-loader">
+            <!-- 主要加載器 -->
+            <div class="loader-content">
+                <div class="company-logo">
+                    <span class="logo-text" data-translate="brand.name">村齊超音波</span>
+                </div>
+                <div class="loading-indicator">
+                    <div class="progress-line"></div>
+                    <div class="loading-text" data-translate="loading.text">正在加載...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/company_logo.jpg" alt="村齊超音波" class="logo-image">
+                        </a>
+                    </div>
+                    
+                    <div class="nav-center">
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html" class="nav-link" data-translate="nav.home">首頁</a></li>
+                            <li><a href="about.html" class="nav-link active" data-translate="nav.about">關於</a></li>
+                            <li><a href="portfolio.html" class="nav-link" data-translate="nav.portfolio">工程實績</a></li>
+                            <li><a href="products.html" class="nav-link" data-translate="nav.products">產品應用</a></li>
+                            <li><a href="contact.html" class="nav-link" data-translate="nav.contact">聯絡</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <div class="language-selector">
+                            <button class="lang-toggle" id="langToggle">
+                                <i class="fas fa-globe"></i>
+                                <span class="current-lang">繁中</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <a href="#" class="lang-option active" data-lang="zh-TW">
+                                    <span class="flag">🇹🇼</span>
+                                    <span class="lang-name">繁體中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="zh-CN">
+                                    <span class="flag">🇨🇳</span>
+                                    <span class="lang-name">简体中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="en">
+                                    <span class="flag">🇺🇸</span>
+                                    <span class="lang-name">English</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="ja">
+                                    <span class="flag">🇯🇵</span>
+                                    <span class="lang-name">日本語</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="ko">
+                                    <span class="flag">🇰🇷</span>
+                                    <span class="lang-name">한국어</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="vi">
+                                    <span class="flag">🇻🇳</span>
+                                    <span class="lang-name">Tiếng Việt</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="th">
+                                    <span class="flag">🇹🇭</span>
+                                    <span class="lang-name">ไทย</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="id">
+                                    <span class="flag">🇮🇩</span>
+                                    <span class="lang-name">Indonesia</span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-translate="nav.home">首頁</a>
+                    <span>/</span>
+                    <span data-translate="nav.about">關於我們</span>
+                </nav>
+                <h1 class="page-title" data-translate="about.title">創新驅動未來</h1>
+                <p class="page-subtitle" data-translate="about.subtitle">專業超音波清洗設備領導者</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <div class="section-header">
+                        <span class="section-label" data-translate="about.label">關於我們</span>
+                        <h2 class="section-title" data-translate="about.sectionTitle">37年專業經驗 • 引領清洗技術創新</h2>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p data-translate="about.text1">村齊企業股份有限公司專注於超音波洗淨設備的設計、研製與應用改良，以穩定可靠的聲波技術，協助產業提升清洗效率與製程品質。憑藉長年累積的超音波工程經驗，村齊致力於打造結構耐用、效能一致、易於維護的工業級洗淨設備。</p>
+
+                        <p data-translate="about.text2">村齊專注於每一項洗淨參數的精準掌控——從超音波頻率、功率、槽體設計到振動子配置——使設備能適用於電子零件、金屬加工件、光學元件、生技器材等多種產業需求。村齊的目標是提供能真正改善客戶製程的專業設備，而不是複雜但不實用的功能堆疊。</p>
+
+                        <p data-translate="about.text3">秉持「效能穩定、結構紮實、精密耐用」的原則，村齊持續調整與優化產品，讓超音波洗淨不只是清潔工具，更是提升產線品質與競爭力的有效技術。</p>
+
+                        <p><strong data-translate="about.text4">村齊企業 —— 專注於開發耐久性高、維修性佳、運轉穩定的超音波洗淨設備</strong></p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h4 data-translate="about.innovation">創新技術</h4>
+                        </div>
+                        <div class="feature-card glass-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4 data-translate="about.quality">品質保證</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-microchip"></i>
+                        <span data-translate="about.precision">聲波</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-shield-alt"></i>
+                        <span data-translate="about.eco">工業耐用</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-chart-line"></i>
+                        <span data-translate="about.efficiency">實效至上</span>
+                    </div>
+                    <div class="center-element">
+                        <div class="center-image">
+                            <img src="images/about_cp.png" alt="村齊企業核心技術">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Design Process Section -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label" data-translate="process.label">設計流程</span>
+                <h2 class="section-title" data-translate="process.title">專業客製化設計流程</h2>
+                <p data-translate="process.subtitle">從需求分析到交機使用，我們提供完整的客製化設計服務</p>
+            </div>
+            
+            <div class="process-timeline" data-aos="fade-up">
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 data-translate="process.step1.title">需求諮詢</h3>
+                        <p data-translate="process.step1.desc">深入了解您的工件材質、污染類型、清洗要求及產線配置</p>
+                        <ul>
+                            <li data-translate="process.step1.item1">現場勘查評估</li>
+                            <li data-translate="process.step1.item2">清洗需求分析</li>
+                            <li data-translate="process.step1.item3">技術可行性討論</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 data-translate="process.step2.title">樣品測試</h3>
+                        <p data-translate="process.step2.desc">使用實際工件進行清洗測試，確認最佳參數設定</p>
+                        <ul>
+                            <li data-translate="process.step2.item1">免費樣品測試</li>
+                            <li data-translate="process.step2.item2">多種頻率驗證</li>
+                            <li data-translate="process.step2.item3">清洗效果確認</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3 data-translate="process.step3.title">方案設計</h3>
+                        <p data-translate="process.step3.desc">根據測試結果設計專屬設備，包含機械結構與控制系統</p>
+                        <ul>
+                            <li data-translate="process.step3.item1">3D設計圖面</li>
+                            <li data-translate="process.step3.item2">詳細規格說明</li>
+                            <li data-translate="process.step3.item3">報價與交期評估</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 data-translate="process.step4.title">製造組裝</h3>
+                        <p data-translate="process.step4.desc">採用高品質零組件，嚴格品質控制下完成設備製造</p>
+                        <ul>
+                            <li data-translate="process.step4.item1">精密機械加工</li>
+                            <li data-translate="process.step4.item2">電控系統整合</li>
+                            <li data-translate="process.step4.item3">出廠測試驗證</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-right" data-aos-delay="500">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3 data-translate="process.step5.title">安裝調試</h3>
+                        <p data-translate="process.step5.desc">專業工程師到場安裝，完成設備調試與人員教育訓練</p>
+                        <ul>
+                            <li data-translate="process.step5.item1">現場安裝調試</li>
+                            <li data-translate="process.step5.item2">操作教育訓練</li>
+                            <li data-translate="process.step5.item3">驗收測試確認</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-cta" data-aos="zoom-in" data-aos-delay="600">
+                <h3 data-translate="process.cta.title">準備開始您的客製化項目？</h3>
+                <p data-translate="process.cta.desc">聯繫我們的工程團隊，獲得專業的需求評估與解決方案</p>
+                <a href="contact.html" class="btn btn-gradient">
+                    <span data-translate="process.cta.button">開始需求評估</span>
+                    <i class="fas fa-rocket"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values Section -->
+    <section class="values-section section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-label" data-translate="values.label">企業價值</span>
+                <h2 class="section-title" data-translate="values.title">我們的核心價值與使命</h2>
+                <p data-translate="values.subtitle">以客戶需求為中心，持續創新技術，提供最優質的清洗解決方案</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="values.customer.title">客戶至上</h3>
+                    <p data-translate="values.customer.desc">以客戶需求為導向，提供最適合的客製化解決方案，確保每一位客戶都能獲得最佳的清洗效果。</p>
+                </div>
+
+                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-translate="values.innovation.title">技術創新</h3>
+                    <p data-translate="values.innovation.desc">持續投入研發，引進最新技術，不斷改進產品性能，保持在超音波清洗技術領域的領先地位。</p>
+                </div>
+
+                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="value-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 data-translate="values.quality.title">品質保證</h3>
+                    <p data-translate="values.quality.desc">嚴格的品質控制流程，從原料採購到產品出廠，每一個環節都確保達到國際標準。</p>
+                </div>
+
+                <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-translate="values.eco.title">綠色環保</h3>
+                    <p data-translate="values.eco.desc">致力於環保清洗技術的開發，減少化學清洗劑的使用，為環境保護貢獻我們的力量。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="footer-bg">
+            <div class="footer-gradient"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/company_logo.jpg" alt="村齊超音波" class="footer-logo-image">
+                    </div>
+                    <div class="company-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="footer.phone">886-4-36011199</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-fax"></i>
+                            <span data-translate="footer.fax">886-4-36011186</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="footer.address">402台中市南區德富路426巷1號</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-industry"></i>
+                            <span data-translate="footer.registration">工廠登記字號：九九-六七二〇二九-〇〇</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-translate="brand.name">村齊超音波</span> <span data-translate="footer.copyright">版權所有</span></p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html" data-translate="footer.privacy">隱私權政策</a>
+                    <span>|</span>
+                    <a href="terms-of-service.html" data-translate="footer.terms">使用條款</a>
+                    <span>|</span>
+                    <a href="cookie-policy.html" data-translate="footer.cookies">Cookie 設定</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="村齊超音波 - 工程實績，成功案例展示">
+    <title>工程實績 - 村齊超音波</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* 防止載入時導航閃爍 */
+        .header { opacity: 0; }
+        @media (max-width: 768px) {
+            .nav-center { display: none !important; }
+            .nav-center.active { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="simple-loader">
+            <!-- 主要加載器 -->
+            <div class="loader-content">
+                <div class="company-logo">
+                    <span class="logo-text" data-translate="brand.name">村齊超音波</span>
+                </div>
+                <div class="loading-indicator">
+                    <div class="progress-line"></div>
+                    <div class="loading-text" data-translate="loading.text">正在加載...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/company_logo.jpg" alt="村齊超音波" class="logo-image">
+                        </a>
+                    </div>
+                    
+                    <div class="nav-center">
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html" class="nav-link" data-translate="nav.home">首頁</a></li>
+                            <li><a href="about.html" class="nav-link" data-translate="nav.about">關於</a></li>
+                            <li><a href="portfolio.html" class="nav-link" data-translate="nav.portfolio">工程實績</a></li>
+                            <li><a href="products.html" class="nav-link active" data-translate="nav.products">產品應用</a></li>
+                            <li><a href="contact.html" class="nav-link" data-translate="nav.contact">聯絡</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <div class="language-selector">
+                            <button class="lang-toggle" id="langToggle">
+                                <i class="fas fa-globe"></i>
+                                <span class="current-lang">繁中</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <a href="#" class="lang-option active" data-lang="zh-TW">
+                                    <span class="flag">🇹🇼</span>
+                                    <span class="lang-name">繁體中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="zh-CN">
+                                    <span class="flag">🇨🇳</span>
+                                    <span class="lang-name">简体中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="en">
+                                    <span class="flag">🇺🇸</span>
+                                    <span class="lang-name">English</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="ja">
+                                    <span class="flag">🇯🇵</span>
+                                    <span class="lang-name">日本語</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="ko">
+                                    <span class="flag">🇰🇷</span>
+                                    <span class="lang-name">한국어</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="vi">
+                                    <span class="flag">🇻🇳</span>
+                                    <span class="lang-name">Tiếng Việt</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="th">
+                                    <span class="flag">🇹🇭</span>
+                                    <span class="lang-name">ไทย</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="id">
+                                    <span class="flag">🇮🇩</span>
+                                    <span class="lang-name">Indonesia</span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-translate="nav.home">首頁</a>
+                    <span>/</span>
+                    <span data-translate="nav.products">產品應用</span>
+                </nav>
+                <h1 class="page-title" data-translate="applications.title">應用領域</h1>
+                <p class="page-subtitle" data-translate="applications.subtitle">多元化產業解決方案 - 深耕各大產業 • 提供專業客製化超音波清洗技術與設備</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <div class="solutions-container">
+                <div class="solution-card-modern" data-aos="fade-up" data-aos-delay="100">
+                    <div class="solution-image-gallery">
+                        <div class="solution-images-slider">
+                            <div class="solution-image active">
+                                <img src="images/products/carindustry_01..jpeg" alt="汽車工業 - 引擎零件清洗">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_02.jpeg" alt="汽車工業 - 變速箱組件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_03.jpeg" alt="汽車工業 - 剎車系統">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_04.jpeg" alt="汽車工業 - 精密感測器">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_05.jpeg" alt="汽車工業 - 轉向系統">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_06.jpeg" alt="汽車工業 - 空調系統">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_07.jpeg" alt="汽車工業 - 電子元件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_08.jpeg" alt="汽車工業 - 精密工具">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_09.jpeg" alt="汽車工業 - 零件加工">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_10.jpeg" alt="汽車工業 - 組件清洗">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/carindustry_11.jpeg" alt="汽車工業 - 設備應用">
+                            </div>
+                        </div>
+                        <div class="solution-image-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                            <span class="indicator" data-slide="3"></span>
+                            <span class="indicator" data-slide="4"></span>
+                            <span class="indicator" data-slide="5"></span>
+                            <span class="indicator" data-slide="6"></span>
+                            <span class="indicator" data-slide="7"></span>
+                            <span class="indicator" data-slide="8"></span>
+                            <span class="indicator" data-slide="9"></span>
+                            <span class="indicator" data-slide="10"></span>
+                        </div>
+                        <button class="solution-image-nav prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="solution-image-nav next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="solutions.auto.title">汽機車產業</h3>
+                        <p data-translate="solutions.auto.desc">超音波清洗設備廣泛應用於汽機車零組件製造與維修，包括引擎、底盤、煞車、噴油系統與車用電子等精密零件。能有效去除油污、碳化物與加工殘渣，提升清潔品質並縮短維修與加工時間，協助汽機車產業提升製程效率與產品可靠度。</p>
+                    </div>
+                    <div class="solution-bg"></div>
+                </div>
+                
+                <div class="solution-card-modern" data-aos="fade-up" data-aos-delay="200">
+                    <div class="solution-image-gallery">
+                        <div class="solution-images-slider">
+                            <div class="solution-image active">
+                                <img src="images/products/semi_01.jpeg" alt="半導體科技 - 晶圓清洗">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/semi_02.jpeg" alt="半導體科技 - 精密組件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/semi_03.jpeg" alt="半導體科技 - 電子元件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/semi_04.jpeg" alt="半導體科技 - 精密清洗">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/semi_05.jpeg" alt="半導體科技 - 製程設備">
+                            </div>
+                        </div>
+                        <div class="solution-image-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                            <span class="indicator" data-slide="3"></span>
+                            <span class="indicator" data-slide="4"></span>
+                        </div>
+                        <button class="solution-image-nav prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="solution-image-nav next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="solutions.electronic.title">半導體與電子產業</h3>
+                        <p data-translate="solutions.electronic.desc">超音波清洗設備適用於半導體晶片製程、電子零件與光電組件的精密清潔需求。可有效去除微粒、殘膠、金屬屑與製程污染物，搭配純水與無塵製程使用，確保高潔淨度與高良率，是半導體與電子產業不可或缺的關鍵清洗設備。</p>
+                    </div>
+                    <div class="solution-bg"></div>
+                </div>
+                
+                <div class="solution-card-modern" data-aos="fade-up" data-aos-delay="300">
+                    <div class="solution-image-gallery">
+                        <div class="solution-images-slider">
+                            <div class="solution-image active">
+                                <img src="images/products/bicycle_01.jpeg" alt="自行車產業 - 車架清洗">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_02.jpeg" alt="自行車產業 - 變速系統">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_03.jpeg" alt="自行車產業 - 輪組清潔">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_04.jpeg" alt="自行車產業 - 精密零件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_05.jpeg" alt="自行車產業 - 零件加工">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_06.jpeg" alt="自行車產業 - 組件處理">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_07.jpeg" alt="自行車產業 - 清洗設備">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_08.jpeg" alt="自行車產業 - 產線應用">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/bicycle_09.jpeg" alt="自行車產業 - 品質控制">
+                            </div>
+                        </div>
+                        <div class="solution-image-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                            <span class="indicator" data-slide="3"></span>
+                            <span class="indicator" data-slide="4"></span>
+                            <span class="indicator" data-slide="5"></span>
+                            <span class="indicator" data-slide="6"></span>
+                            <span class="indicator" data-slide="7"></span>
+                            <span class="indicator" data-slide="8"></span>
+                        </div>
+                        <button class="solution-image-nav prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="solution-image-nav next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="solutions.bicycle.title">自行車產業</h3>
+                        <p data-translate="solutions.bicycle.desc">超音波清洗設備適用於自行車零組件的深度清潔，包括齒盤、鏈條、培林、避震結構與精密加工件。能有效去除油泥、金屬屑與加工殘渣，提升組件耐用度與運轉順暢度，同時協助製造端提升加工效率與成品品質。</p>
+                    </div>
+                    <div class="solution-bg"></div>
+                </div>
+                
+                <div class="solution-card-modern" data-aos="fade-up" data-aos-delay="500">
+                    <div class="solution-image-gallery">
+                        <div class="solution-images-slider">
+                            <div class="solution-image active">
+                                <img src="images/products/material_01.jpeg" alt="精品配件 - 奢侈品清洗">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/material_02.jpeg" alt="精品配件 - 精緻工藝品">
+                            </div>
+                        </div>
+                        <div class="solution-image-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                        </div>
+                        <button class="solution-image-nav prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="solution-image-nav next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="applications.luxury.title">精品配件產業</h3>
+                        <p data-translate="applications.luxury.desc">超音波清洗設備廣泛應用於精品手錶、飾品、眼鏡、金屬配件及高級皮件五金的精密清潔。能徹底去除汗垢、指紋、氧化層與加工殘留，使表面光澤恢復如新，提升產品質感與耐用度，滿足精品產業對高標準外觀品質的要求。</p>
+                    </div>
+                    <div class="solution-bg"></div>
+                </div>
+
+                <div class="solution-card-modern" data-aos="fade-up" data-aos-delay="600">
+                    <div class="solution-image-gallery">
+                        <div class="solution-images-slider">
+                            <div class="solution-image active">
+                                <img src="images/products/heavyindustry_01.jpeg" alt="重工製造 - 大型機械零件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_02.jpeg" alt="重工製造 - 工業設備">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_03.jpeg" alt="重工製造 - 金屬模具">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_04.jpeg" alt="重工製造 - 船舶組件">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_05.jpeg" alt="重工製造 - 加工設備">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_06.jpeg" alt="重工製造 - 產線應用">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_07.jpeg" alt="重工製造 - 清洗系統">
+                            </div>
+                            <div class="solution-image">
+                                <img src="images/products/heavyindustry_08.jpeg" alt="重工製造 - 工業零件">
+                            </div>
+                        </div>
+                        <div class="solution-image-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                            <span class="indicator" data-slide="2"></span>
+                            <span class="indicator" data-slide="3"></span>
+                            <span class="indicator" data-slide="4"></span>
+                            <span class="indicator" data-slide="5"></span>
+                            <span class="indicator" data-slide="6"></span>
+                            <span class="indicator" data-slide="7"></span>
+                        </div>
+                        <button class="solution-image-nav prev" data-direction="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="solution-image-nav next" data-direction="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="applications.heavy.title">重工製造</h3>
+                        <p data-translate="applications.heavy.desc">超音波清洗設備適用於大型機械、鑄造件、焊接件與精密加工零組件的深層清潔。能有效去除油脂、金屬屑、焊接殘渣與加工污染物，提升零件組裝品質與可靠度，同時優化製程效率，滿足重工產業對耐用性與高強度工件的清潔需求。</p>
+                    </div>
+                    <div class="solution-bg"></div>
+                </div>
+
+                <div class="solution-card-modern" data-aos="fade-up" data-aos-delay="600">
+                    <div class="solution-image-gallery">
+                        <div class="solution-images-slider">
+                            <div class="solution-image active">
+                                <img src="images/products/music_01.jpeg" alt="音樂產業 - 黑膠唱片清洗">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-content">
+                        <h3 data-translate="applications.music.title">音樂產業</h3>
+                        <p data-translate="applications.music.desc">超音波技術在音樂產業中扮演關鍵角色，廣泛應用於黑膠唱片、音響零組件、精密傳輸機構的清潔與維護。利用高頻超音波在液體中產生的空化效應，可有效去除傳統方法難以清除的微細灰塵、油膜與氧化物，確保唱片與音響設備維持最佳音質表現。</p>
+                    </div>
+                    <div class="solution-bg"></div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="solutions-cta" data-aos="fade-up" data-aos-delay="700">
+                <h3 data-translate="applications.cta.title">找不到您的產業應用？</h3>
+                <p data-translate="applications.cta.desc">我們擁有豐富的跨領域經驗，歡迎諮詢客製化解決方案</p>
+                <a href="contact.html" class="btn btn-gradient">
+                    <span data-translate="applications.cta.btn">立即諮詢</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="footer-bg">
+            <div class="footer-gradient"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/company_logo.jpg" alt="村齊超音波" class="footer-logo-image">
+                    </div>
+                    <div class="company-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="footer.phone">886-4-36011199</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-fax"></i>
+                            <span data-translate="footer.fax">886-4-36011186</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="footer.address">402台中市南區德富路426巷1號</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-industry"></i>
+                            <span data-translate="footer.registration">工廠登記字號：九九-六七二〇二九-〇〇</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-translate="brand.name">村齊超音波</span> <span data-translate="footer.copyright">版權所有</span></p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html" data-translate="footer.privacy">隱私權政策</a>
+                    <span>|</span>
+                    <a href="terms-of-service.html" data-translate="footer.terms">使用條款</a>
+                    <span>|</span>
+                    <a href="cookie-policy.html" data-translate="footer.cookies">Cookie 設定</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <div class="modal-content-image">
+            <div class="modal-header-image">
+                <h3 id="modalImageTitle" class="modal-image-title" data-translate="applications.imagePreview">圖片預覽</h3>
+                <button class="modal-close-image" onclick="closeImageModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body-image">
+                <button class="modal-nav-btn prev-image" onclick="showPrevImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="">
+                    <div class="image-info">
+                        <span id="imageCounter">1 / 1</span>
+                    </div>
+                </div>
+                <button class="modal-nav-btn next-image" onclick="showNextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

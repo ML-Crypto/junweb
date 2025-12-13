@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="村齊超音波 - 產品系列，專業設備解決方案">
+    <title>產品系列 - 村齊超音波</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* 防止載入時導航閃爍 */
+        .header { opacity: 0; }
+        @media (max-width: 768px) {
+            .nav-center { display: none !important; }
+            .nav-center.active { display: block !important; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="simple-loader">
+            <!-- 主要加載器 -->
+            <div class="loader-content">
+                <div class="company-logo">
+                    <span class="logo-text" data-translate="brand.name">村齊超音波</span>
+                </div>
+                <div class="loading-indicator">
+                    <div class="progress-line"></div>
+                    <div class="loading-text" data-translate="loading.text">正在加載...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/company_logo.jpg" alt="村齊超音波" class="logo-image">
+                        </a>
+                    </div>
+                    
+                    <div class="nav-center">
+                        <ul class="nav-menu" id="navMenu">
+                            <li><a href="index.html" class="nav-link" data-translate="nav.home">首頁</a></li>
+                            <li><a href="about.html" class="nav-link" data-translate="nav.about">關於</a></li>
+                            <li><a href="portfolio.html" class="nav-link active" data-translate="nav.portfolio">工程實績</a></li>
+                            <li><a href="products.html" class="nav-link" data-translate="nav.products">產品應用</a></li>
+                            <li><a href="contact.html" class="nav-link" data-translate="nav.contact">聯絡</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-actions">
+                        <div class="language-selector">
+                            <button class="lang-toggle" id="langToggle">
+                                <i class="fas fa-globe"></i>
+                                <span class="current-lang">繁中</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-dropdown" id="langDropdown">
+                                <a href="#" class="lang-option active" data-lang="zh-TW">
+                                    <span class="flag">🇹🇼</span>
+                                    <span class="lang-name">繁體中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="zh-CN">
+                                    <span class="flag">🇨🇳</span>
+                                    <span class="lang-name">简体中文</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="en">
+                                    <span class="flag">🇺🇸</span>
+                                    <span class="lang-name">English</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="ja">
+                                    <span class="flag">🇯🇵</span>
+                                    <span class="lang-name">日本語</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="ko">
+                                    <span class="flag">🇰🇷</span>
+                                    <span class="lang-name">한국어</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="vi">
+                                    <span class="flag">🇻🇳</span>
+                                    <span class="lang-name">Tiếng Việt</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="th">
+                                    <span class="flag">🇹🇭</span>
+                                    <span class="lang-name">ไทย</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="id">
+                                    <span class="flag">🇮🇩</span>
+                                    <span class="lang-name">Indonesia</span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content" data-aos="fade-up">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-translate="nav.home">首頁</a>
+                    <span>/</span>
+                    <span data-translate="nav.portfolio">工程實績</span>
+                </nav>
+                <h1 class="page-title" data-translate="portfolio.title">專業設備解決方案</h1>
+                <p class="page-subtitle" data-translate="portfolio.subtitle">為各產業提供客製化超音波清洗設備</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Products Grid Section -->
+    <section class="products-grid-section">
+        <div class="container">
+            <div class="products-stats" data-aos="fade-up">
+                <div class="stats-item">
+                    <span class="stats-number" data-count="1000">0</span>
+                    <span class="stats-symbol">+</span>
+                    <span class="stats-label" data-translate="portfolio.stats.solutions">客製化方案</span>
+                </div>
+                <div class="stats-item">
+                    <span class="stats-number" data-count="37">0</span>
+                    <span class="stats-symbol" data-translate="portfolio.stats.yearUnit">年</span>
+                    <span class="stats-label" data-translate="portfolio.stats.years">專業經驗</span>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- 產品卡片 1 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/2-1 三槽式超音波清洗設備.jpeg" alt="三槽式超音波清洗設備 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/2-2 三槽式超音波清洗設備.jpeg" alt="三槽式超音波清洗設備 - 側視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/2-3 三槽式超音波清洗設備.jpeg" alt="三槽式超音波清洗設備 - 細節圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/2-4 三槽式超音波清洗設備.jpeg" alt="三槽式超音波清洗設備 - 細節圖2">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                                <span class="indicator" data-slide="3"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">三槽式超音波清洗設備</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">精密清洗</span>
+                            <span class="feature-tag">電子專用</span>
+                            <span class="feature-tag">無損清洗</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('precision-cleaner')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 3 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/3-1 五槽式超音波清洗設備.jpeg" alt="五槽式超音波清洗設備 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/3-2 五槽式超音波清洗設備.jpeg" alt="五槽式超音波清洗設備 - 側視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">五槽式超音波清洗設備</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">大型設備</span>
+                            <span class="feature-tag">工業級</span>
+                            <span class="feature-tag">高效率</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('industrial-cleaner')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 4 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/4-1 自動化超音波清洗設備.jpeg" alt="自動化超音波清洗設備 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/4-2 自動化超音波清洗設備.jpeg" alt="自動化超音波清洗設備 - 側視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/4-3 自動化超音波清洗設備.jpeg" alt="自動化超音波清洗設備 - 細節圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/4-4 自動化超音波清洗設備.jpeg" alt="自動化超音波清洗設備 - 細節圖2">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                                <span class="indicator" data-slide="3"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">自動化超音波清洗設備</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">自動化</span>
+                            <span class="feature-tag">智能控制</span>
+                            <span class="feature-tag">精確參數</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('smart-control')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 5 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/5-1 船型超音波清洗設備.jpeg" alt="船型超音波清洗設備 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/5-2 船型超音波清洗設備.jpeg" alt="船型超音波清洗設備 - 側視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/5-3 船型超音波清洗設備.jpeg" alt="船型超音波清洗設備 - 細節圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/5-4 船型超音波清洗設備.jpeg" alt="船型超音波清洗設備 - 細節圖2">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/5-5 船型超音波清洗設備.jpeg" alt="船型超音波清洗設備 - 細節圖3">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                                <span class="indicator" data-slide="3"></span>
+                                <span class="indicator" data-slide="4"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">船型超音波清洗設備</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">實驗室級</span>
+                            <span class="feature-tag">小型精密</span>
+                            <span class="feature-tag">多功能</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('lab-cleaner')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 6 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/6-1 溶劑蒸餾回收機.jpeg" alt="溶劑蒸餾回收機 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/6-2 溶劑蒸餾回收機.jpeg" alt="溶劑蒸餾回收機 - 側視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">溶劑蒸餾回收機</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">醫療級</span>
+                            <span class="feature-tag">無菌清洗</span>
+                            <span class="feature-tag">認證標準</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('medical-cleaner')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 7 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/7-1 超音波發振機及振動鈑.jpeg" alt="超音波電子發振機及振動鈑 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/7-2 超音波發振機及振動鈑.jpeg" alt="超音波電子發振機及振動鈑 - 側視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">超音波電子發振機及振動鈑</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">珠寶專用</span>
+                            <span class="feature-tag">溫和清洗</span>
+                            <span class="feature-tag">精緻護理</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('jewelry-cleaner')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 8 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="800">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/8-1治具碳化清潔爐.jpeg" alt="治具碳化清潔爐 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/8-2治具碳化清潔爐.jpeg" alt="治具碳化清潔爐 - 側視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/8-3治具碳化清潔爐.jpeg" alt="治具碳化清潔爐 - 細節圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/8-4治具碳化清潔爐.jpeg" alt="治具碳化清潔爐 - 操作面板">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/8-5治具碳化清潔爐.jpeg" alt="治具碳化清潔爐 - 內部構造">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                                <span class="indicator" data-slide="3"></span>
+                                <span class="indicator" data-slide="4"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">治具碳化清潔爐</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">大型容量</span>
+                            <span class="feature-tag">工業級</span>
+                            <span class="feature-tag">高效率</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('large-industrial')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 9 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/9-1 純水過濾設備.jpeg" alt="純水過濾設備 - 主視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">純水過濾設備</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">精密製造</span>
+                            <span class="feature-tag">小型設備</span>
+                            <span class="feature-tag">品質控制</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('precision-parts')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 10 - 藥水過濾系統 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/10-1 藥水過濾系統.jpeg" alt="藥水過濾系統 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/10-2 藥水過濾系統.jpeg" alt="藥水過濾系統 - 側視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" data-translate="product.chemical-filter.title">藥水過濾系統</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">高效過濾</span>
+                            <span class="feature-tag">循環設計</span>
+                            <span class="feature-tag">多槽適用</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('chemical-filter-system')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 11 - 廢水濾漆設備 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/11-1 廢水濾漆設備.jpeg" alt="廢水濾漆設備 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/11-2 廢水濾漆設備.jpeg" alt="廢水濾漆設備 - 側視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" data-translate="product.multi-function.title">廢水濾漆設備</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">多功能</span>
+                            <span class="feature-tag">綜合性</span>
+                            <span class="feature-tag">多樣化</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('wastewater-filter')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 12 - 美製原裝氣動防爆桶裝專用泵浦 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/12-1 美製原裝氣動防爆桶裝專用泵浦.jpeg" alt="美製原裝氣動防爆桶裝專用泵浦 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/12-2 美製原裝氣動防爆桶裝專用泵浦.jpeg" alt="美製原裝氣動防爆桶裝專用泵浦 - 側視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/12-3 美製原裝氣動防爆桶裝專用泵浦.jpeg" alt="美製原裝氣動防爆桶裝專用泵浦 - 細節圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                                <span class="indicator" data-slide="2"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">美製原裝氣動防爆桶裝專用泵浦</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">防爆設計</span>
+                            <span class="feature-tag">氣動驅動</span>
+                            <span class="feature-tag">專業級</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('explosion-proof-pump')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 13 - 冷卻塔管路清洗機 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="1300">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/13-1 冷卻塔管路清洗機.jpeg" alt="冷卻塔管路清洗機 - 主視圖">
+                                </div>
+                                <div class="product-image">
+                                    <img src="images/portfolio/13-2 冷卻塔管路清洗機.jpeg" alt="冷卻塔管路清洗機 - 側視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                                <span class="indicator" data-slide="1"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">冷卻塔管路清洗機</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">管路清洗</span>
+                            <span class="feature-tag">冷卻系統</span>
+                            <span class="feature-tag">高效能</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('cooling-tower-cleaner')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 14 - 熱風循環烘烤爐 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="1400">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/14-1 熱風循環烘烤爐.jpeg" alt="熱風循環烘烤爐 - 主視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">熱風循環烘烤爐</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">熱風循環</span>
+                            <span class="feature-tag">精確控溫</span>
+                            <span class="feature-tag">節能環保</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('hot-air-oven')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 產品卡片 15 - 各式超音波清洗溶劑 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="product-image-container">
+                        <div class="product-image-gallery">
+                            <div class="product-images-slider">
+                                <div class="product-image active">
+                                    <img src="images/portfolio/15-1 各式超音波清洗溶劑.jpeg" alt="各式超音波清洗溶劑 - 主視圖">
+                                </div>
+                            </div>
+                            <div class="image-indicators">
+                                <span class="indicator active" data-slide="0"></span>
+                            </div>
+                            <button class="image-nav prev" data-direction="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="image-nav next" data-direction="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">各式超音波清洗溶劑</h3>
+                        <div class="product-features">
+                            <span class="feature-tag">專業配方</span>
+                            <span class="feature-tag">多種用途</span>
+                            <span class="feature-tag">高效清潔</span>
+                        </div>
+                        <button class="product-detail-btn" onclick="openProductModal('ultrasonic-solvents')">
+                            <span data-translate="portfolio.viewDetail">查看詳情</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 客製化諮詢區塊 -->
+    <section class="portfolio-inquiry-section">
+        <div class="container">
+            <div class="portfolio-inquiry-content" data-aos="fade-up">
+                <div class="inquiry-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3 class="inquiry-title" data-translate="portfolio.inquiry.title">找不到您的工程需求？</h3>
+                <p class="inquiry-description" data-translate="portfolio.inquiry.desc">我們擁有豐富的跨領域經驗，歡迎諮詢客製化解決方案</p>
+                <a href="contact.html" class="btn btn-gradient">
+                    <span data-translate="portfolio.inquiry.btn">立即諮詢</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="footer-bg">
+            <div class="footer-gradient"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/company_logo.jpg" alt="村齊超音波" class="footer-logo-image">
+                    </div>
+                    <div class="company-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="footer.phone">886-4-36011199</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-fax"></i>
+                            <span data-translate="footer.fax">886-4-36011186</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="footer.address">402台中市南區德富路426巷1號</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-industry"></i>
+                            <span data-translate="footer.registration">工廠登記字號：九九-六七二〇二九-〇〇</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span data-translate="brand.name">村齊超音波</span> <span data-translate="footer.copyright">版權所有</span></p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html" data-translate="footer.privacy">隱私權政策</a>
+                    <span>|</span>
+                    <a href="terms-of-service.html" data-translate="footer.terms">使用條款</a>
+                    <span>|</span>
+                    <a href="cookie-policy.html" data-translate="footer.cookies">Cookie 設定</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="product-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" class="modal-title">產品詳情</h2>
+                <button class="modal-close" onclick="closeProductModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- 產品詳細內容將通過JavaScript動態載入 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+    <script>
+        // 產品卡片翻譯映射 (productId -> data-translate key)
+        const productCardMap = {
+            'smart-cleaner': { title: 'product.smart-cleaner.title', features: 'product.smart-cleaner.features' },
+            'precision-cleaner': { title: 'product.precision-cleaner.title', features: 'product.precision-cleaner.features' },
+            'industrial-cleaner': { title: 'product.industrial-cleaner.title', features: 'product.industrial-cleaner.features' },
+            'smart-control': { title: 'product.smart-control.title', features: 'product.smart-control.features' },
+            'lab-cleaner': { title: 'product.lab-cleaner.title', features: 'product.lab-cleaner.features' },
+            'medical-cleaner': { title: 'product.medical-cleaner.title', features: 'product.medical-cleaner.features' },
+            'jewelry-cleaner': { title: 'product.jewelry-cleaner.title', features: 'product.jewelry-cleaner.features' },
+            'large-industrial': { title: 'product.large-industrial.title', features: 'product.large-industrial.features' },
+            'precision-parts': { title: 'product.precision-parts.title', features: 'product.precision-parts.features' },
+            'multi-function': { title: 'product.multi-function.title', features: 'product.multi-function.features' },
+            'explosion-proof-pump': { title: 'product.explosion-proof-pump.title', features: 'product.explosion-proof-pump.features' },
+            'cooling-tower-cleaner': { title: 'product.cooling-tower-cleaner.title', features: 'product.cooling-tower-cleaner.features' },
+            'hot-air-oven': { title: 'product.hot-air-oven.title', features: 'product.hot-air-oven.features' },
+            'ultrasonic-solvents': { title: 'product.ultrasonic-solvents.title', features: 'product.ultrasonic-solvents.features' }
+        };
+
+        // 翻譯產品卡片
+        function translateProductCards() {
+            const currentLang = localStorage.getItem('language') || 'zh-TW';
+            const langData = translations[currentLang];
+            if (!langData) return;
+
+            // 找出所有產品卡片的按鈕，從中提取 productId
+            document.querySelectorAll('.product-detail-btn').forEach(btn => {
+                const onclickAttr = btn.getAttribute('onclick');
+                if (!onclickAttr) return;
+
+                const match = onclickAttr.match(/openProductModal\('([^']+)'\)/);
+                if (!match) return;
+
+                const productId = match[1];
+                const mapping = productCardMap[productId];
+                if (!mapping) return;
+
+                // 找到父卡片
+                const card = btn.closest('.product-card');
+                if (!card) return;
+
+                // 翻譯標題
+                const titleEl = card.querySelector('.product-title');
+                if (titleEl && langData[mapping.title]) {
+                    titleEl.textContent = langData[mapping.title];
+                }
+
+                // 翻譯特性標籤
+                const featuresStr = langData[mapping.features];
+                if (featuresStr) {
+                    const features = featuresStr.split(',');
+                    const featureTags = card.querySelectorAll('.feature-tag');
+                    featureTags.forEach((tag, index) => {
+                        if (features[index]) {
+                            tag.textContent = features[index];
+                        }
+                    });
+                }
+            });
+        }
+
+        // 監聽語言變更事件並重新翻譯產品卡片
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始翻譯
+            setTimeout(translateProductCards, 300);
+
+            // 監聽語言下拉選單的點擊
+            document.querySelectorAll('.lang-option').forEach(option => {
+                option.addEventListener('click', function() {
+                    setTimeout(translateProductCards, 100);
+                });
+            });
+        });
+
+        // 當語言系統更新時重新翻譯
+        window.addEventListener('languageChanged', translateProductCards);
+    </script>
+</body>
+</html>
